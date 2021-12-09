@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyDiary</title>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!---Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Montserrat -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style4.css">
+
+</head>
+<body>
+
+   <div class="dashboard">
+    <div class="">
+        <h1><i class="fa fa-plus-circle" style="font-size:25px; float: left; margin-left: 10px;"></i><b style="margin-right: 15px;">MyDiary</b></h1>
+    </div>
+    <form class="responsive" action="/diarys" method="POST">
+       <div class="">
+        <label>Name:</label>
+        <div class="input-group">
+            <input type="text" name="name" class="" placeholder="Enter file name...">
+            <div class="upload" style="float: right;">
+                <input type="file" id="file" name="file" accept="image/*">
+                <label for="file">
+                <i class="material-icons">add_photo_alternate</i>
+                Photo
+                </label>
+            </div>
+        </div>
+        <label>Description:</label>
+        <textarea name="description" id="description" cols="52" rows="20" style="margin-top: 6px;"></textarea>
+        <div>
+            <button class="btn btn-primary">Save</button>
+            <button class="btn btn-danger" style="margin-right: 15px;">Cancel</button>
+        </div>
+       </div>
+    
+    </form>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: #696969;
+  font-family: "Roboto" sans-serif;
+}
+.dashboard {
+  width: 460px;
+  height: 620px;
+  margin: auto;
+  background-color: #fcfbf7;
+  border-radius: 3px;
+}
+h1 {
+  text-align: center;
+  padding-top: 8px;
+  background-color: #dbff33;
+  font-size: 22px;
+  height: 43px;
+  border-radius: 3px;
+}
+form {
+  width: 390px;
+  margin-left: 35px;
+}
+form label {
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+}
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+.btn {
+  width: 100px;
+  height: 32px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  float: right;
+  margin-top: 20px;
+}
+.list {
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.input-group {
+  align-items: center;
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+.group {
+  align-items: center;
+  display: ruby-base-container;
+  margin-bottom: 10px;
+}
+.search {
+  width: 40px;
+  height: 35px;
+  border: none;
+  border-radius: none;
+  outline: none;
+  font-size: 16px;
+}
+form table {
+  margin-top: 10px;
+}
+.img {
+  width: 30px;
+  float: left;
+  margin-bottom: 50px;
+  margin-bottom: 5px;
+}
+.table {
+  margin-top: 20px;
+}

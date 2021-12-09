@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyDiary</title>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+   <div class="dashboard">
+    <div class="">
+        <h1><img src="../img/icon.png" class="img" alt="logo" style="margin-left: 8px;"><b style="margin-right: 18px;">MyDiary</b></h1>
+    </div>
+    <form class="responsive" action="/diaryList" method="POST">
+        <div class="input-group">
+            <input type="text" placeholder="Search.." name="search">
+            <button class="search" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="group">
+            <p class="list"><b>MyDiary Lists</b></p>
+            <a href="/diarys" class="btn btn-primary"><i class="fa fa-plus"></i> Create</a>
+        </div>
+
+        <div class="card-body" >
+            <table id="table" class="table">
+                <thead style="background-color: #DBFF33; margin-top: 10px;">
+                    <tr>
+                    <th>File Name</th>
+                    <th>Date Created</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>Document 1</td>
+                    <td>mm/dd/yy</td>
+                    <td>
+                        <a href=""><i class="fa fa-pencil"></i></a>
+                        <a href=""><i class="fa fa-trash"></i></a>
+                    </td>
+                                                       
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+   </div>
+    
+</body>
+</html>

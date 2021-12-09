@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyDiary</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Script -->
+    <script src='js/script.js' type="text/javascript"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="signUp">
+      <h1><b>Sign Up</b></h1>
+      <form class="responsive" action="/users" method="POST">
+        <div class="row">
+          <label>First Name</label>
+          <input type="text" id="firstName" name="firstName" class="" placeholder="Enter first name...">
+          <label>Last Name</label>
+          <input type="text" id="lastName" name="lastName" class="" placeholder="Enter last name...">
+          <div class="row">
+            <div class="col-sm-6">
+          <label>Username</label>
+          <input type="text" id="username" name="username" class="" placeholder="Enter username...">
+            </div>
+            <div class="col-sm-6">
+          <label>Birtdate</label>
+          <input type="date" id="birthDate" name="birthDate" class="">
+            </div>
+          </div>
+          <label>Email Address</label>
+          <input type="text" id="email" name="email" class="" placeholder="Enter email address...">
+          <label>Password</label>
+          <div class="input-group">
+          <input type="password" id="password" name="password" class="" placeholder="Enter password...">
+          </div>
+          <label>Re-type Password</label>
+          <div class="input-group">
+          <input type="password" id="confirm_password" name="confirm_password" class="" placeholder="Re-type password..."  onkeyup="checkPasswordMatch();" >
+          </div>
+          <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+        </div>
+        <button name="btn-create" id="submit" class="btn btn-primary">CREATE ACCOUNT</button>
+        <p style="text-align: center; margin-top: 10px;">Already have an account? <a href="/users/login">Sign In</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
