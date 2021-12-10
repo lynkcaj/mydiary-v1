@@ -1,4 +1,4 @@
-const image_input = document.querySelector("#image-input");
+const image_input = document.querySelector("#file");
 var uploaded_image = "";
 
 image_input.addEventListener("change", function(){
